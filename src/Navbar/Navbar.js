@@ -6,12 +6,20 @@ const Navbar = ({ cart, toggleModal }) => {
   return (
     <nav className='navbar'>
       <h1>Kopa Samsu Store</h1>
-      <div className='cart-counter' onClick={toggleModal}>
+      {/* <div className='cart-counter' onClick={toggleModal}>
         <span>{cart.length}</span>
         <BsFillCartFill className='icon' color='#fff' />
-      </div>
+      </div> */}
     </nav>
   );
 };
+
+export const NavbarDui=()=>{
+  return(
+    <nav>
+      <h1>Dui</h1>
+    </nav>
+  );
+}
 
 export default Navbar;
